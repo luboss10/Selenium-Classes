@@ -1,0 +1,66 @@
+Selenium class 04
+
+2 types of Xpath :
+absolute and relative
+
+absolute:
+(/html/body/div[2]/div/div[2]/div/div[2]/form/button)[1]
+
+relative:
+1.inspecting using attributes:
+//tagname[@attribute='attribute value']
+//*[
+
+2.using text:
+//tagname[text()='text']
+
+
+3.identify by using contains method:
+//tagname[contains(@attribute,'attribute value')]
+//tagname[contains(text(),'partial text')]
+example
+//input[contains(@id,'form')]
+
+4. identify using starts with method:
+will identify the elements with the starting partial value
+//tagname[starts-with(@attribute,'partial starting value')]
+//tagname[starts-with(text(),'partial starting text')]
+
+
+-------------------------Topic Advance Xpath-------------------
+Advanced Xpath is based upon parent child relationship
+
+1.identifying element using following sibling
+//tagname[@attribute='attribute value']/following-sibling::tagname
+ 2.identify the element using preceding sibling                                      /preceding-sibling
+meaning
+-go to the tagname that has attribute value 'attribute value' now get me the following sibling of this tag
+
+-----> in order to use this advance path( following sibling we need to
+
+3.identify the element using parent
+//tagname[@attribute='attribute value']/parent::tagname
+
+4.identify the element using ancestor
+//tagname[@attribute='attribute value']/ancestor::div[8]
+
+--------------------CSS Selector----------------------
+tagname[attribute='attribute value']     //no //
+shortcut
+for ID: '#'
+tagname#valueofattributeofid
+for class: '.'
+tagname.valueofattributeofclass
+
+contains method in css:
+*symbolrepresents the contains method
+tagname[attribute*='partial attributes value']
+input[name*='txtU']
+
+Starts with method in css:
+^symbol represents starts with method in css
+input[name^='txtU']
+
+Ends -with method in css:
+$ symbol represents the ends with method
+

@@ -1,0 +1,24 @@
+Webtables
+html:
+<tables>
+   <thead>
+   </thead>
+
+   <tbody>
+        <tr>
+           <td> </td>
+        </tr>
+   </tbody>
+</tables>
+
+
+Tables with pagination:
+Tables divided into several pages, the navigation bar is called PAGINATION
+
+NoSuchElementException:
+1.the locator is wrong
+2.the element is not populated yet
+the driver executable does not exist: the driver is not correct
+
+StaleElementException:
+1.the element that we are looking for is no longer there(it disappeared

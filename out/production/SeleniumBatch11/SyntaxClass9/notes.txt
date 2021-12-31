@@ -1,0 +1,18 @@
+Selenium waits:
+1.Why to avoid Thread.Sleep()???
+
+
+Implicit wait:
+will we applied to "wait" and find those elements which are not there yet there in the
+
+
+
+Explicit wait:
+
+WEBTABLES:
+are elements on the webpage that have rows and columns
+
+Types:
+1.Static WebTables
+2.Dynamic WebTables
+

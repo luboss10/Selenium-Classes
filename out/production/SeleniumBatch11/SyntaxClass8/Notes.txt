@@ -1,0 +1,28 @@
+============================Selenium Class 8==========================
+Window handles():
+Each window/tab has unique Id
+
+How do we handle multiple windows in Selenium:
+1. getAllWindowHandles()--> gets all the handles-->return type:set of strings
+2. driver.switchTo.windows(desiered windowHandle)
+
+getWindowHandles()-->this method is not taking care
+
+only 1 window at a time
+
+
+==============================Waits======================
+1.ImplicitWait
+-is applied to all "driver.findElement"
+ if the element is found , no wait is applied
+ if it is not found then the wait is applied for certain amount of time
+ *if the certain amount of time has passed and still the emelent is not found, we get an Exeption "noSuchElement"
+
+ Syntax for this wait is:
+ driver.manage().timeouts().implicitlyWait();
+
+ implicitwait(maximum amount of time before it throws an exception, units)
+ ********************************Implicit wait - waits till the webelement is found
+
+2.ExplicitWait or WebDriver waits
+These waits are used to tell the webdriver to wait till the certain condition is matched

@@ -1,0 +1,176 @@
+---------------------------------Selenium class 01--------------------------------
+12/30/2021 , Windows ,7.05
+
+What is Software testing?
+- Identify the quality and correctness of the software
+
+How many ways can we test a software?
+- manual
+- automation
+
+when do we go for automation?
+- frequent regression testing is required
+- repeated test case execution
+- efficiency
+
+What are the tools that we have for automation?
+SELENIUM, UFT/QTP, CUCUMBER, TestNG, Katlon Studio
+
+Levels of testing?
+1. Unit testing
+2. Integration testing
+3. System testing
+4. Acceptance testing
+
+Types if Testing?
+1. Functional ()
+2. Non-Functional (performance, security)
+
+What is Selenium?
+-A set of tools to help us automate
+Web based applications only     ---no desktop aplications
+Performing functional testing
+It is usually used for performance Testing
+
+
+Selenium suite. . .
+1.SELENIUM IDE- it is a plugin, record and play
+cons: no programming
+
+2.SELENIUM RC- remote control
+- it supports different languages
+- it supports different browsers
+- it requires RC server
+
+
+3.SELENIUM WEBDRIVER --- its an interface
+- support different browsers
+- it will support different languages
+
+4.SELeNIUM GRID
+- consists of a node and hub
+- run test cases in parallel on a different browsers
+
+Selenium 1
+Selenium 2---> Selenium RC and webDriver(combined)
+selenium 3---> some improvements in Selenium2
+Selenium4---> Some changes and improvements in the communication protocol
+
+Advantages of Selenium
+- Open source (for free)
+- Compatible with different languages( java,ruby, C#)
+- It allows you to have test cases run on different browsers
+- It's not OS dependent (windows , Mac, Linux)
+
+Disadvantages of Selenium
+-no technical support
+-we cannot test desktop application
+-no built-in reports
+-we cannot test images and videos
+
+Selenium Architecture
+JSON (Java script object notation)-WIRE PROTOCOL
+
+
+
+STEPS TI OPNE CHROME USING SELENIUM
+1. Set System Property (key,value) -key is the driver that we are using ---value is the path to that driver
+2. Create an object
+3.
+--------- close() vs quit()
+driver.close()-----> it will close the current tab that we are on
+
+driver.quit()-----> it will close the whole browser
+---------
+
+-----------get() vs navigate()
+-using navigate we can move forward and backwards and refresh the page
+ but
+using get we cannot do that
+
+
+--all website are made of usually HTML,CSS and js
+
+we have tags in HTML
+-tags have different purposes ...to define headings,paragraphs, pictures etc
+we must have an opening tag and closing tag
+
+example:
+<html> -- its an opening tag (or node)
+</html> -- its closing tags
+
+<batch11>
+  <listOfStudents>
+    <name>Lubo</name>
+    <name>Miska</name> (attribute and the value is that attribute)
+  </listOfStudents>
+  <listOfInstructors>
+    <name>Moazzam</name>
+    <name>Asghar</name>
+  </listOfInstructors>
+</batch11>
+
+another example:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Batch 11 </h1>
+<p>Our first class isn't looking too bad for now.
+First time im really enjoying this :)</p>
+
+</body>
+</html>
+
+
+//html
+
+<tag attribute>
+</tag>
+
+
+the webpage has an underlying html code
+---everything that we see on the webpage is basically appearing to us thorough some kind of code
+DOM-->Document Object Model (Inspect on every page)
+
+WeBElement :
+everything that appears to us on any webpage (behind every webElements we have underlying html code (text box,check box,radio buttons,web tables,buttons,links, broken links-images)
+
+Locator:
+it is the address or the position of the WebElement on the page
+
+*8 Locators :
+1. id    ----is the safest and quickest locator used
+2. name
+3. Tagname
+4. classname
+5. linktext
+6. partiallinktext
+7. xpath
+8. css
+
+why do we have so many locators:
+if the locator is not unique, we can choose the one that is unique
+-the developers may not provide us with all the locators
+
+When do we get a noElement exception?
+Selenium was unable to find the element that we are looking for
+GO CHECK YOUR LOCATOR VALUE
+
+<a> is called an anchor tag, it contains a link
+we can access this using locator "linktext or partiallink"
+
+a webElement has an underlying code
+-his html code starts with a tag
+-the tag may have different attributes
+-there attributes are there to help locate those elements and in some cases define the other criterias
+-we must make sure that the locator that we are opting for is unique enough
+-
+what if there are 2 attributes with same values - selenium is going to return the first one
+
+
+
+

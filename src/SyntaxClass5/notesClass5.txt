@@ -1,0 +1,83 @@
+document object model(DOM) --->inspect page
+
+tag= purple
+attribute= orange
+value= blue
+text= black
+
+
+----------------------------RADIO BUTTONS---------------------------------
+
+We can select one radio button at a time
+
+isDisplayed()---> boolean
+checks if the particular webElement is displayed/present on the page or not
+
+isEnabled()---> boolean
+checks if you can select that radio button or not
+
+isSelected()--->boolean
+it tells weather the particular button is selected or not
+
+=======================Drop-Downs===========================
+two types of dropdowns
+1.single select
+2.multi select
+
+1.Single Select:
+method1
+Click on the drop down and then click on the option
+method2
+using a select class
+-there is a condition in order to use select class
+we need to make sure that our drop down has a select tag
+If we use select class we can use in 3 different methods
+1.by index
+2.by visible text
+3.by value
+
+Steps to use select class:
+1.to find a webElement "dropdown" having the select class
+2.Create an object ofSelect class(webElement (which has the select tag))
+3.Use any method provided by select class to select the option you desire
+   a.   .Byvalue()---> parameters the value attribute "value" in <options> tag
+   b.   .Byindex()---> will need to count the number of the option
+   c.   .ByvisibleText()---> parameter the text in the tag <option> which we want to select
+
+4.   .getOptions() ---> no parameter returns us all the tags <options> which are child of <select tag>
+ return type is <list>WebElements
+
+
+MultipleSelect DropDowns
+1. isMultiple()---> if the drop down is multiselect or not
+additional methods:
+a.deselect.byIndex();
+b.deselect.byvalue();
+c.deselect.byvisibletext();
+
+
+ALERTS:
+a popup message, it takes the focus completly off the page
+We cannot prcced in selenium until it is handled
+
+3types of Alerts:
+1.web based alerts---> it is a html based alert/ we can resolve them simply by inspecting
+
+2.Javascript alerts/browser alerts---> we can handle them by inspecting? NO -because they do not have an HTML,
+  we handle them using switchTo method in selenium
+
+3.windows based alert--->cannot be handled with selenium
+
+JAVASCRIPT ALERTS:
+1.simple alert--->  click ok
+2.confirmation alert--->either cancel or OK
+3.prompt alert --->enter text and then press cancel or ok
+
+HOW TO HANDLE THESE JAVASCRIPT ALERTS IN SELENIUM:
+USING "alert interface"
+
+THE METHODS IS GIVES US:
+1.accept()
+2.dismiss()
+3.getText()
+4.sendkeys()

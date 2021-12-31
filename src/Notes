@@ -1,0 +1,97 @@
+Relative Xpath
+Syntax:
+//tagname[@atributte='atributte value']
+Example:
+//intupt[@type='password']
+can you find me the tag input that has an attribute "type" with the attribute value "password"
+
+identify the element by its text:
+//tagname[text()='text value']
+can you find me the tag which has text of value "text value"
+Example//a[text)='Alerts and Modals']
+
+identifying elements using contain method
+//tagname[contains(@attribute,'attribute value')]
+exp:
+//tagname[contains(@attribute,'sometext')]
+can you find me tag which has the attribute "attribute and its value contains "sometext"
+
+
+
+Advanced Xpath
+How many kind of Xpath
+ABSOLUTE and RELATIVE
+
+RELATIVE:
+1. inspecting using attributes
+//tagname[@attribute='attribute value]
+how to read it-> can you find a tagname that has attribute which value is attribute value
+
+2. inspecting using text
+//tagname[text()='text']
+
+3.identify by using contain method:
+//tagname[contains(@attribute,'attribute value')]
+Example:
+//input[contains(@id,'form')]
+
+4. identify using starts-with method:
+will identify the elements with the starting partial value
+Syntax:
+//tagname[starts-with(@attribute,'partial starting value')]
+//tagname[starts-with(text,'partial starting value')]
+
+---------------Topic advance Xpath-------------
+Advance Xpath is based upon parent child relationship
+1. identifying element using following sibling
+//tagname[@attribute='attribute value']/following-sibling::tagname
+go to the tagname that has attribute with value 'attribute value' now get me the following sibling of this tag
+
+//input[@id='message']/following-sibling::label
+go to tagname input that has the attribute id with value message now get me the following sibling with tagname label
+-->in order to use this advanced xPath following sibling we need to indentify one sibling that can be indentified uniquely
+
+2.identify elements using preceding sibling
+//tagname[@attribute='attribute value']/preceding-sibling::tagname
+//input[@id='message']/preceding-sibling::a
+
+3.
+identify the element using child parent relationship
+//tagname[@attribute='attribute value']/parent::parrenttagname
+
+4.
+//tagname[@attribute='attribute value']ancestor::ancestorTagName
+
+example:
+//input[@id='sum2']/ancestor::div
+
+---------------CSS selector-----------------
+1.they are very fast
+2.easily readable
+
+CSS doesnt allow to locate using text()
+SYNTAX:
+//tagname[attribute value]
+
+
+Short cut for CSS
+For ID -- '#'
+tagname#valueofattribute
+For class -- '.'
+tagname.valueforattributeclass
+
+we can enter class and id together also
+
+  div.textInputContainer#divUsername
+
+  contains method in css:
+  *symbol represents the contains method
+  tagname[attribute*='partial attribute value']
+
+  Starts with method in CSS
+  ^ symbol represents starts with method in css
+  tagname[attribute^='partial attribute value']
+
+  ends with method in CSS
+  $ represents the endingwith method
+  tagname[attribute$='partial attribute value']

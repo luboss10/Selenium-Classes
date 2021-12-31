@@ -1,0 +1,27 @@
+Testing :
+Manual & Automation
+
+for:
+webbased application/websites    --frontend
+stadalone app/desktop app
+database  ----backend
+
+tool+ programming lang (selenium,UFT,GTP)+java
+
+for automation -frequent testing needed
+
+selenium webdriver-
+supports multiple programming languages
+cross browsing is possible
+open source
+platform independent -operating systems
+
+steps
+selenium --> browser/driver --->url
+
+document object model(DOM) --->inspect page
+
+tag= purple
+attribute= orange
+value= blue
+text= black
