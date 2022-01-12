@@ -1,0 +1,62 @@
+========================================WEBTABLES==============================
+1.Static webTables --> Fixed rows and columns
+
+2.Dynamic webTables --> rows and columns can change
+
+The tables static sand dynamic may have pagination
+<table>
+      <thead>
+
+      </thead>
+
+      <tbody>
+             <tr>
+                 <td>nyc</td>
+             </tr>
+
+      /tbody>
+</table>
+
+1.navigate to url
+2.locate the table
+3.narrow down the xpath toget all the rows
+4.we will get a List<WebElements> having all the rows
+5.we will iterate through the list to get the required row
+
+====================================calendars=============================
+drop down -->year., month table
+
+2.trable with pagination
+
+dealing with calendar drop downs and table
+1.click in the webeleemtn date
+2.use select class to select the month from  a calendar
+3.use select class to select the year from the calendar
+4.in table, get all the dates(
+list of elements
+a.iterate through the list,
+                          while iterating we will check for the desired value
+b.if it is there we will simply break the loop
+
+list dates=drivers.findElements()
+for(webElement date: dates){
+if(date.getText()="15")
+date.click;
+break;
+}
+
+
+2.calendar --->table with pagination
+
+======================================Screenshots============================
+1.interface--> takescreenshot
+2.fileUtils
+
+========================================Action class==========================
+help us automate mouse and keyboard actions
+move to an element
+drag/drop
+double click
+right click
+etc
+=========================================javascript executor===================

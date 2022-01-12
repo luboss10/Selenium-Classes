@@ -1,0 +1,29 @@
+
+POM ===============Page Object model
+
+Is a design pattern which allows us to enhance test maintenance and reduce code duplication+improves readability
+
+Advantages:
+1.code reusability
+2.code maintainability
+3.code readability
+
+PageFactory:
+it is a class in selenium
+that allows us to interact with stored elements
+
+
+public WebElement username=driver.findElement(By.id(""));
+
+use this:
+@FindBy-->annotation
+
+@FindBy(id="some text")
+
+
+1 more thing if you are using page factory
+You need to initialize your variables
+public loginWithPageFactory(){
+   PageFactory.initElements(driver,this);
+   }
+
