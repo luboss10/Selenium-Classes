@@ -25,12 +25,21 @@ public class Radiobuttons {
         System.out.println("The radio button is displayed on the4 webPage   :"+ isDisplayed);
         //check if radio button is enabled
         boolean isEnabled=femaleRadioBtn.isEnabled();
-        System.out.println("The radio button is enablend on the webPage   :"+isEnabled);
+        System.out.println("The radio button is enabled on the webPage   :"+isEnabled);
 
         //check if the radio button is selected
-        femaleRadioBtn.isSelected();
+        //femaleRadioBtn.isSelected();
         boolean isSelected= femaleRadioBtn.isSelected();
         System.out.println("the radio button is selected  :"+ isSelected);
+
+        //select the female radio btn only if its Enabled
+        if(isEnabled){
+            femaleRadioBtn.click();
+        }
+        //after clicking the btn print if its selected or not
+        isSelected= femaleRadioBtn.isSelected();
+        System.out.println("The female button is selected on the webpage  :"+isSelected);
+
     Thread.sleep(2000);
         driver.quit();
     }

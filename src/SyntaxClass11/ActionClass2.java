@@ -1,23 +1,28 @@
-package ReviewClass3;
+package SyntaxClass11;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.concurrent.TimeUnit;
 
-public class Framess2 {
-    public static void main(String[] args) throws InterruptedException {
+public class ActionClass2 {
+    public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("http://syntaxprojects.com/dynamic-data-loading-demo.php");
+        driver.get("http://amazon.com");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 
-        WebElement newUserOpt=driver.findElement(By.xpath("//*[@id='save']"));
-        newUserOpt.click();
-        Thread.sleep(2000);
-        driver.quit();
+
+        //find the element
+        WebElement accountAndLists= driver.findElement(By.cssSelector("a#nav-link-accountList"));
+
+        Actions action=new Actions(driver);
+        action.moveToElement(accountAndLists);
+
+
     }
 }

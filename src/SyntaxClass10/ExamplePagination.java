@@ -41,9 +41,14 @@ public class ExamplePagination {
             for (int i = 0; i < tableRows.size(); i++) {
                 //get the text out of the webelement in the list
                 String text = tableRows.get(i).getText();
-                //check if the row contains the id we trying to locate
+                //check if the row contains the id we're trying to locate
+
                 if (text.contains("26335A")) {
-                    System.out.println("i found the text for you");
+                    System.out.println("i found the text for you "+i);
+                    String xpath="//*[@id='resultTable']/tbody/tr["+(i+1)+"]/td/input"; // CLICKING PARTICULAR CHECKBOX
+                    WebElement checkbox = driver.findElement(By.xpath(xpath));
+                    checkbox.click();
+                    System.out.println("the xpath to is: "+xpath);
                     //we found the desired row si we need to end the while loop
                     notFound=false;
                     //we break the loop

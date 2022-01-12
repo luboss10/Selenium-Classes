@@ -1,0 +1,43 @@
+how to handle calendar with pagination
+1. click on calendar
+2.locate the month and year and get the text
+3.if the desired month and year is there,then select the dates// if not the click on the next button until we find the desired month and year
+4.once the month is selected
+get the list of all the dates aavauilable in calendar
+
+
+
+====================working with keys
+in selenium we can replicate the behaviour all the keys that are there on keybordd using the enum keys
+e.g
+Keys.TAB
+Keys.Backspace
+ets
+--------------------taking screenshots------------
+//to prove that the test case works
+
+========================actionclass
+is given by Selenium to capture the keyword and mouse events such as
+1.move to an element
+2.drag and drop
+3.double click
+4.right click
+
+=====================javaScript Executor
+it is in selenium and can be executed on the browser
+--javaScript executor allows us to execute javaScript code
+--its an interface
+
+why and when should we use it?
+only when selenium is unable to perfom the operation
+e.g you are unable to click on a webelement
+
+-----------using java script we can perfom
+click operation
+scroll the page
+refresh the page
+highlight an element
+
+
+
+
